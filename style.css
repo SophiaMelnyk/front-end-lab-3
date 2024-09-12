@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.float-layout::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Технологія Float */
+.float-layout {
+    margin-bottom: 30px;
+}
+
+.container-float {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header-float {
+    background-color: #8BC34A;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    float: left;
+    /* Фон для заголовка, вирівнювання по центру */
+}
+
+.main-content-float {
+    width: 100%;
+    float: left;
+    /* Головний контент */
+}
+
+.text-left-float {
+    background-color: #7986CB;
+    width: 25%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    padding-top: 140px;
+    /* Лівий блок тексту, вирівнювання по центру */
+}
+
+.image-float {
+    background-color: #B3E5FC;
+    width: 75%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    padding-top: 140px;
+    /* Блок із зображенням, вирівнювання по центру */
+}
+
+.footer-float {
+    background-color: #FFECB3;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    float: left;
+    /* Футер, вирівнювання по центру */
+}
+
+/* Технологія Flex */
+.flexbox-layout1 {
+    margin-top: 30px;
+}
+
+.container-flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header-flexbox {
+    background-color: #8BC34A;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Заголовок, вирівнювання по центру */
+}
+
+.main-content-flexbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    /* Основний контент у рядку */
+}
+
+.text-left-flexbox {
+    background-color: #7986CB;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Лівий блок тексту, вирівнювання по центру */
+}
+
+.image-flexbox {
+    background-color: #B3E5FC;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Блок із зображенням, вирівнювання по центру */
+}
+
+.footer-flexbox {
+    background-color: #FFECB3;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Футер з флексбоксом, вирівнювання по центру */
+}
